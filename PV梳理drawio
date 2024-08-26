@@ -1,26 +1,38 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0" version="24.7.6">
   <diagram name="第 1 页" id="_zyfYdGmDDqxz5TFiCc3">
-    <mxGraphModel dx="986" dy="431" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1813" dy="431" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="C0u2QKwZ_9EOLkYmxb4w-1" value="IP Merge" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry width="120" height="60" as="geometry" />
+          <mxGeometry x="-280" y="60" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="C0u2QKwZ_9EOLkYmxb4w-2" value="Dummy" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="190" width="120" height="60" as="geometry" />
+          <mxGeometry x="-280" y="160" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="C0u2QKwZ_9EOLkYmxb4w-3" value="DRC" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="486" width="120" height="60" as="geometry" />
+          <mxGeometry x="-280" y="340" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="C0u2QKwZ_9EOLkYmxb4w-4" value="LVS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="646" width="120" height="60" as="geometry" />
+          <mxGeometry x="-280" y="430" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="C0u2QKwZ_9EOLkYmxb4w-5" value="ERC" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="806" width="120" height="60" as="geometry" />
+          <mxGeometry x="-280" y="530" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="C0u2QKwZ_9EOLkYmxb4w-6" value="DFM" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="340" width="120" height="60" as="geometry" />
+          <mxGeometry x="-280" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="C0u2QKwZ_9EOLkYmxb4w-12" value="Command:calibredrv -a layout filemerge -in a.gds -in b.gds -oasisout ab.gds" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="60" width="430" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="C0u2QKwZ_9EOLkYmxb4w-13" value="Command:calibre -drc -hier -turbo 16 -hyper rulePath" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="340" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="C0u2QKwZ_9EOLkYmxb4w-14" value="setenv LAYOUT_PATH gen.oas&amp;nbsp; setenv SOURCE_PATH source.spi&lt;br&gt;Command:v2lvs -v source_netlist -s spice_list -o output" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-150" y="425" width="380" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="C0u2QKwZ_9EOLkYmxb4w-15" value="得到含晶体管信息的spice网表" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="230" y="425" width="180" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
